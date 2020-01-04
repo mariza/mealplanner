@@ -1,0 +1,58 @@
+{
+  "name": "hungry",
+  "version": "1.0.1",
+  "description": "meal prep planner",
+  "main": "js/main.js",
+  "scripts": {
+    "start:dev": "webpack-dev-server  --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mariza/mealplanner.git"
+  },
+  "keywords": [
+    "planner",
+    "lunch",
+    "dinner",
+    "weekly",
+    "meal",
+    "generator",
+    "recipes"
+  ],
+  "author": "Mariza Metaxa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mariza/mealplanner/issues"
+  },
+  "homepage": "https://github.com/mariza/mealplanner#readme",
+  "devDependencies": {
+    "@babel/core": "^7.7.7",
+    "@babel/node": "^7.7.7",
+    "@babel/plugin-proposal-class-properties": "^7.7.4",
+    "@babel/plugin-proposal-export-namespace-from": "^7.7.4",
+    "@babel/plugin-proposal-throw-expressions": "^7.7.4",
+    "@babel/plugin-syntax-dynamic-import": "^7.7.4",
+    "@babel/preset-env": "^7.7.7",
+    "@babel/preset-es2015": "^7.0.0-beta.53",
+    "@babel/preset-react": "^7.7.4",
+    "node-sass": "^4.13.0",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^8.0.0",
+    "webpack": "^4.41.5"
+  },
+  "dependencies": {
+    "babel-loader": "^8.0.6",
+    "classnames": "^2.2.6",
+    "css-loader": "^3.4.1",
+    "express": "^4.17.1",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "style-loader": "^1.1.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-middleware": "^3.7.2",
+    "webpack-dev-server": "^3.10.1",
+    "webpack-hot-middleware": "^2.25.0"
+  }
+}
