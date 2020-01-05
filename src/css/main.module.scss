@@ -10,7 +10,7 @@ body {
 }
 
 .mainSection {
-	height:100vh;
+	height:300vh;
 	overflow:hidden;
 	position:relative;
 	display: flex;
@@ -21,55 +21,24 @@ body {
 }
 
 .topContainer {
-	height:12vh;
+	height:20vh;
 	display:flex;
-	justify-content: space-between;
+	justify-content: flex-start;
 }
 
 .descriptionContainer {
-	padding:0 20% 0 0;
+	margin:0 0 0 12%;
 	width:30%;
-	color:rgba(255,255,255,.7);
+	color:#494E53;
 }
 
 .mainContainer{
-	padding:1em 2em 1em 0em
-}
-
-.actionBtn{
-	padding: 0.5em 1em;
-	background-color:#10472c;
-	color:#c3c5d6;
-	font-size:18px;
-	margin-bottom:2em;
-	cursor:pointer;
-}
-
-.table {
-	border:1px solid black;
-	display:flex;
-	flex-direction:column;
-}
-
-.headerRow {
-	background-color:#62a383;
-}
-
-.row {
+	padding:1em 2em 1em 0em;
 	display:flex;
 	justify-content:space-between;
-	padding:.5em;
-	border:1px solid black;
-}
-.cell{
-	color:black;
-	width:14%;
+	align-items:flex-start;
 }
 
-.headerCell{
-	font-weight:500;
-	color:white;
-}
 
 
 .footer {
@@ -96,8 +65,6 @@ body {
 }
 
 .titleContainer {
-	display:flex;
-	flex-direction:column;
 	position:relative;
 	font-size:28px;
 	color: #10472c;
@@ -123,6 +90,7 @@ body {
 	text-decoration:none;
 	width:140px;
 }
+
 i {
 	margin-right:10px;
 }

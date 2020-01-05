@@ -1,0 +1,43 @@
+.main{
+  display:flex;
+  flex-direction:column;
+  flex-grow:2.5;
+}
+
+.actionBtn{
+  margin-top:1em;
+  width:250px;
+	padding: 0.5em 1em;
+	background-color:#10472c;
+	color:#c3c5d6;
+	font-size:18px;
+	margin-bottom:2em;
+	cursor:pointer;
+}
+
+.table {
+	border:1px solid #494E53;
+	display:flex;
+	flex-direction:column;
+}
+
+
+.headerRow {
+	background-color:#62a383;
+}
+
+.row {
+	display:flex;
+	justify-content:space-between;
+	padding:.5em;
+	border:1px solid #494E53;
+}
+.cell{
+	color:black;
+	width:14%;
+}
+
+.headerCell{
+	font-weight:500;
+	color:white;
+}

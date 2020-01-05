@@ -1,0 +1,49 @@
+.main {
+  margin: 1em 0em 1.7em 0em;
+  display:flex;
+  width:300px;
+  justify-content:flex-start;
+  align-items:center;
+}
+.mainMeals {
+    display:flex;
+    flex-direction:column;
+    flex-grow:.5;
+}
+
+.inputfield {
+  width: 190px;
+  padding:.5em;
+  margin-right: 1.5em;
+  height: 1.6em;
+  border:1px solid #A9A9A9;
+}
+
+.saveBtn {
+  padding: 0.5em 1em;
+  background-color:#494E53;
+  color:white;
+  font-size:14px;
+  cursor:pointer;
+}
+
+.list{
+  list-style:none;
+  padding:0;
+}
+
+.listItem{
+  background-color: white;
+  color:black;
+  padding:0.4em .8em;
+  width:250px;
+  overflow:hidden;
+  border:1px solid #A9A9A9;
+  margin-bottom: 2px;
+  display:flex;
+  justify-content: space-between;
+}
+.deleteBtn{
+  cursor:pointer;
+  color: #A9A9A9;
+}
