@@ -1,16 +1,18 @@
 .main {
-  margin: 1em 0em 1.7em 0em;
+
+}
+
+.form{
   display:flex;
-  width:300px;
   justify-content:flex-start;
   align-items:center;
 }
-.mainMeals {
-    display:flex;
-    flex-direction:column;
-    flex-grow:.5;
-}
 
+.inputLabel{
+  width:275px;
+  color:#494E53;
+  margin-bottom:5px;
+}
 .inputfield {
   width: 190px;
   padding:.5em;
@@ -30,6 +32,9 @@
 .list{
   list-style:none;
   padding:0;
+  overflow:auto;
+  height:260px;
+  width:280px;
 }
 
 .listItem{
@@ -46,4 +51,9 @@
 .deleteBtn{
   cursor:pointer;
   color: #A9A9A9;
+}
+@media print {
+	.noPrint  {
+		display: none;
+	}
 }

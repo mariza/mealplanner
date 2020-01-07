@@ -6,15 +6,17 @@ import ListItem  from './Listitem';
 
 
 const List = props => {
-  const [meals, setMeals] = useContext(MealsContext);
+  const [data, setData] = useContext(MealsContext);
   const deleteItem = (item) => {
-    const _meals = meals.filter(_meals => _meals !== item)
-    setMeals(_meals)
+    const _meals = data.meals.filter(_meals => _meals !== item)
+    setData({meals:_meals,lunchGen:data.lunchGen,dinnerGen:data.dinnerGen,mode:data.mode})
   };
-  const items = meals.map((item, index) => {
+  const items = data.meals.map((item, index) => {
       return <ListItem key={index} index={index} item={item} deleteItem={deleteItem}/>
     });
-    return (<ul className={css.list}>{items}</ul>);
+    return (
+      <ul className={css.list}>{items}</ul>
+    );
 };
 
 export default List;

@@ -1,43 +1,60 @@
 .main{
   display:flex;
   flex-direction:column;
-  flex-grow:2.5;
+  margin-bottom:2em;
+}
+.buttonBar{
+  display:flex;
+  justify-content:space-between;
+  height:50px;
 }
 
-.actionBtn{
-  margin-top:1em;
-  width:250px;
-	padding: 0.5em 1em;
-	background-color:#10472c;
-	color:#c3c5d6;
-	font-size:18px;
-	margin-bottom:2em;
-	cursor:pointer;
+.printBtn{
+  margin-top:.5em;
+  width:60px;
+  padding: 0.5em 1em;
+  background-color:#494E53;
+  color:white;
+  font-size:14px;
+  margin-bottom:.5em;
+  cursor:pointer;
 }
-
 .table {
 	border:1px solid #494E53;
 	display:flex;
 	flex-direction:column;
 }
-
-
-.headerRow {
-	background-color:#62a383;
+.cell{
+	color:black;
+	width:13%;
+  border-right: 1px solid #A9A9A9;
+  padding:0.5em;
 }
-
+.smallCell{
+  width:9%;
+}
 .row {
 	display:flex;
 	justify-content:space-between;
-	padding:.5em;
 	border:1px solid #494E53;
+  background-color:white;
+  :last-child{
+    border-right:none;
+  }
 }
-.cell{
-	color:black;
-	width:14%;
+.headerRow {
+	background-color:#62a383;
 }
-
 .headerCell{
 	font-weight:500;
 	color:white;
+  text-align:center;
+  border-right:none;
+}
+
+.buttons{
+  display:flex;
+  margin-top:1em;
+  margin-bottom:2em;
+
 }
