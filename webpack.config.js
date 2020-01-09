@@ -52,14 +52,19 @@ module.exports = {
                   ],
                 },
                 {
-                    test: /\.scss$/,
-                    use: ["style-loader",{
+                  test: /\.scss$/,
+                  use: ["style-loader",{
                       loader: 'css-loader',
                       options: {
                         modules: true,
                       }
                     },"sass-loader"],
                   },
+                  {
+                    test: /\.(jpe?g|png|gif|svg)$/i,
+                    loader: "file-loader"
+                  },
+
         ]
     },
     plugins: [

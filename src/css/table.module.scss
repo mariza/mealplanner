@@ -5,11 +5,13 @@
 }
 .buttonBar{
   display:flex;
-  justify-content:space-between;
+  justify-content:flex-end;
   height:50px;
+  align-items:center;
 }
 
 .printBtn{
+  margin-left:0.5em;
   margin-top:.5em;
   width:60px;
   padding: 0.5em 1em;
@@ -56,5 +58,12 @@
   display:flex;
   margin-top:1em;
   margin-bottom:2em;
+}
+
+
+@media print {
+	.noPrint  {
+		display: none;
+	}
 
 }

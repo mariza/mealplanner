@@ -1,0 +1,38 @@
+.wrapper{
+
+}
+
+.dropdown{
+    padding: 0.5em 1em;
+    font-size: 12px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+  .flagIcon{
+    margin-left:5px;
+  }
+}
+
+
+.menu{
+  position: absolute;
+  width: 30px;
+  box-sizing: border-box;
+  background-color: white;
+  border: 1px solid	#BEBEBE;
+  margin-left:109px;
+  :hover{
+    background-color:#d4f2db;
+  }
+}
+.flagIcon{
+  width:19px;
+  height:19px;
+}
+.menuItem{
+  padding:0.3em;
+  width:100%;
+  box-sizing:border-box;
+  display:flex;
+  align-items:center;
+}
