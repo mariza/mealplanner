@@ -13,7 +13,7 @@ const rootEl = document.getElementById('root');
 const App = () => {
 	return (<div>
 			<section className={cn(css.section, css.mainSection)}>
-				<div className={cn(css.topContainer, css.noPrint)}>
+				<div className={cn(css.topContainer, 'noPrint')}>
 					<div className={css.titleContainer}>
 						<i className="fa fa-cutlery"></i>Meal Planner
 					</div>
@@ -28,7 +28,7 @@ const App = () => {
 					</MealsProvider>
 				</div>
 			</section>
-			<footer className={cn(css.footer, css.noPrint)}>
+			<footer className={cn(css.footer, 'noPrint')}>
 				<div className={css.socialContainer}>
 					<a className={css.linkItem} href="https://ch.linkedin.com/in/marizametaxa" target="_blank"><i className="fa fa-linkedin" aria-hidden="true"/>Linkedin</a>
 					<a className={css.linkItem} href="" target="_blank"><i className="fa fa-at" aria-hidden="true"/>Contact us</a>

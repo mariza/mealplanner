@@ -1,4 +1,5 @@
 @import './_globalColors';
+@import './_globalStyles';
 
 body {
 	height: 100%;
@@ -112,9 +113,6 @@ i {
 
 
 @media print {
-	.noPrint {
-		display: none;
-	}
 	.mainSection {
 		min-height: 0;
 	}

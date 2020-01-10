@@ -4,6 +4,7 @@ import css from '../css/meals.module.scss';
 import cn from 'classnames/bind';
 import List from './List';
 import MealsInput from './MealsInput';
+import Rules from './Rules';
 
 
 const Meals = props => {
@@ -42,15 +43,8 @@ const Meals = props => {
 			dinnerGen: tempDinner
 		});
 	};
-	const modeChange = (ev) => {
-		setData({
-			mode: ev.target.value,
-			lunchGen: data.lunchGen,
-			meals: data.meals,
-			dinnerGen: data.dinnerGen
-		});
-	};
-	return (<div className={cn(css.main, css.noPrint)}>
+
+	return (<div className={cn(css.main, 'noPrint')}>
 			<div className={cn(css.mealsInput, css.section)}>
 				<div className={css.sectionTitle}>1. Add the meals</div>
 				<MealsInput/>
@@ -58,10 +52,7 @@ const Meals = props => {
 			</div>
 			<div className={css.section}>
 				<div className={css.sectionTitle}>2. Specify the rules</div>
-				<div className={css.radioInputs}>
-					<label className={css.radioLabel}><input type="radio" name="mealtype" value="1" checked={data.mode === '1'} onChange={modeChange}/>Just Lunch</label>
-					<label className={css.radioLabel}><input type="radio" name="mealtype" value="2" checked={data.mode === '2'} onChange={modeChange}/>Lunch and Dinner</label>
-				</div>
+				<Rules/>
 			</div>
 			<div className={css.section}>
 				<div className={css.sectionTitle}>3. Generate the schedule</div>

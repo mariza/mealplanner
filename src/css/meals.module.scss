@@ -1,4 +1,5 @@
 @import './_globalColors';
+@import './_globalStyles';
 
 .main {
 	display: flex;
@@ -49,11 +50,4 @@
 .mealsInput {
 	display: flex;
 	flex-direction: column;
-}
-
-@media print {
-	.noPrint {
-		display: none;
-	}
-
 }

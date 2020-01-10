@@ -1,5 +1,5 @@
 @import './_globalColors';
-
+@import './_globalStyles';
 .main {
 	display: flex;
 	flex-direction: column;
@@ -70,10 +70,3 @@
 	margin-bottom: 2em;
 }
 
-
-@media print {
-	.noPrint {
-		display: none;
-	}
-
-}

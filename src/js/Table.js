@@ -16,7 +16,7 @@ const Table = props => {
 		setLanguage(langId);
 	};
 	return (<div className={css.main}>
-		<div className={cn(css.buttonBar, css.noPrint)}>
+		<div className={cn(css.buttonBar, 'noPrint')}>
 			<div className={css.buttons}>
 			</div>
 			<LanguageSelector onLanguageChange={changeLang}/>
