@@ -14,4 +14,4 @@ export const MealsProvider = (props) => {
       {props.children}
     </MealsContext.Provider>
   )
-}
+};
