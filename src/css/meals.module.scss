@@ -1,51 +1,58 @@
-.main{
-  display:flex;
-  :last-child{
-    margin-right:0;
-  }
+@import './_globalColors';
+
+.main {
+	display: flex;
+
+	:last-child {
+		margin-right: 0;
+	}
 }
 
-.actionBtn{
-  width:250px;
+.actionBtn {
+	width: 250px;
 	padding: 0.5em 1em;
-	background-color:#10472c;
-	color:#c3c5d6;
-	font-size:16px;
-	cursor:pointer;
+	background-color: $color-green;
+	color: $color-grey-magenta;
+	font-size: 16px;
+	cursor: pointer;
 }
-.radioLabel{
-  display:flex;
-  align-items:center;
+
+.radioLabel {
+	display: flex;
+	align-items: center;
 }
+
 .section {
-  flex-grow:1;
-  border:1px solid white;
-  padding:1em;
-  margin-right:0.5em;
-  box-sizing:border-box;
-
+	flex-grow: 1;
+	border: 1px solid white;
+	padding: 1em;
+	margin-right: 0.5em;
+	box-sizing: border-box;
 }
 
-.sectionTitle{
-  text-align: center;
-  font-size: 24px;
-  margin-bottom: 0.8em;
+.sectionTitle {
+	text-align: center;
+	font-size: 24px;
+	margin-bottom: 0.8em;
 }
-.radioInputs{
-  display:flex;
-  flex-direction:column;
-  margin-left:1em;
-  input{
-    margin-right:1em;
-  }
+
+.radioInputs {
+	display: flex;
+	flex-direction: column;
+	margin-left: 1em;
+
+	input {
+		margin-right: 1em;
+	}
 }
+
 .mealsInput {
-  display:flex;
-  flex-direction:column;
+	display: flex;
+	flex-direction: column;
 }
 
 @media print {
-	.noPrint  {
+	.noPrint {
 		display: none;
 	}
 
