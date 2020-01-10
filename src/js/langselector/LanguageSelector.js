@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
-import css from '../css/languageselector.module.scss';
+import css from './languageselector.module.scss';
 
-import greekFlag from '../css/icons/greece.svg';
-import germanFlag from '../css/icons/germany.svg';
-import ukFlag from '../css/icons/united-kingdom.svg';
+import greekFlag from '../../css/icons/greece.svg';
+import germanFlag from '../../css/icons/germany.svg';
+import ukFlag from '../../css/icons/united-kingdom.svg';
 
 const flagIconMap = {
 	'en': ukFlag,
@@ -30,9 +30,9 @@ const LanguageSelector = props => {
 	return (<div className={css.wrapper}>
 			<button className={css.dropdown} onClick={toggleMenu}>Select language<img className={css.flagIcon} src={flagIconMap[language]}/></button>
 			{toggle ? <div className={css.menu}>
-				<div value="en" className={css.menuItem} onClick={selectLang.bind(this, 'en')} id="en"><img className={css.flagIcon} src={ukFlag}></img></div>
-				<div value="de" className={css.menuItem} onClick={selectLang.bind(this, 'de')} id="de"><img className={css.flagIcon} src={germanFlag}></img></div>
-				<div value="el" className={css.menuItem} onClick={selectLang.bind(this, 'gr')} id="gr"><img className={css.flagIcon} src={greekFlag}></img></div>
+				<div className={css.menuItem} onClick={selectLang.bind(this, 'en')} id="en"><img className={css.flagIcon} src={ukFlag}></img></div>
+				<div className={css.menuItem} onClick={selectLang.bind(this, 'de')} id="de"><img className={css.flagIcon} src={germanFlag}></img></div>
+				<div className={css.menuItem} onClick={selectLang.bind(this, 'gr')} id="gr"><img className={css.flagIcon} src={greekFlag}></img></div>
 			</div> : null}
 		</div>);
 };

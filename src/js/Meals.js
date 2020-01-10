@@ -2,7 +2,7 @@ import React, {useContext} from 'react';
 import {MealsContext} from "./MealsContext";
 import css from '../css/meals.module.scss';
 import cn from 'classnames/bind';
-import List from './List';
+import List from './list/List';
 import MealsInput from './MealsInput';
 import Rules from './Rules';
 

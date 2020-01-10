@@ -1,6 +1,6 @@
 import React, {useContext} from 'react';
 import Meals from "./Meals";
-import css from "../css/meals.module.scss";
+import css from "../css/rules.module.scss";
 import {MealsContext} from "./MealsContext";
 
 const Rules = props => {

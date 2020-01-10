@@ -2,8 +2,9 @@ import React, {useContext, useState} from 'react';
 import {MealsContext} from "./MealsContext";
 import cn from 'classnames/bind';
 import css from '../css/table.module.scss';
-import LanguageSelector from './LanguageSelector';
-import languageTextMap from './LanguagesText';
+import LanguageSelector from './langselector/LanguageSelector';
+import languageTextMap from './langselector/LanguagesText';
+
 
 const Table = props => {
 	const [data, setData] = useContext(MealsContext);
@@ -48,5 +49,7 @@ const Table = props => {
 		</div>
 	</div>);
 };
+
+
 
 export default Table;

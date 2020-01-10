@@ -9,20 +9,6 @@
 	}
 }
 
-.actionBtn {
-	width: 250px;
-	padding: 0.5em 1em;
-	background-color: $color-green;
-	color: $color-grey-magenta;
-	font-size: 16px;
-	cursor: pointer;
-}
-
-.radioLabel {
-	display: flex;
-	align-items: center;
-}
-
 .section {
 	flex-grow: 1;
 	border: 1px solid white;
@@ -37,17 +23,18 @@
 	margin-bottom: 0.8em;
 }
 
-.radioInputs {
-	display: flex;
-	flex-direction: column;
-	margin-left: 1em;
-
-	input {
-		margin-right: 1em;
-	}
-}
 
 .mealsInput {
 	display: flex;
 	flex-direction: column;
+}
+
+
+.actionBtn {
+	width: 250px;
+	padding: 0.5em 1em;
+	background-color: $color-green;
+	color: $color-grey-magenta;
+	font-size: 16px;
+	cursor: pointer;
 }

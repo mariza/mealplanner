@@ -27,6 +27,13 @@ body {
 	justify-content: flex-start;
 }
 
+
+.titleContainer {
+	position: relative;
+	font-size: 28px;
+	color: $color-green;
+}
+
 .descriptionContainer {
 	display: none; // TODO remove if needed
 	margin: 0 0 0 12%;
@@ -41,7 +48,6 @@ body {
 	justify-content: space-between;
 	height: 100%;
 }
-
 
 .footer {
 	width: 100%;
@@ -66,12 +72,12 @@ body {
 	justify-content: space-around;
 }
 
-.titleContainer {
-	position: relative;
-	font-size: 28px;
-	color: $color-green;
+.linkItem {
+	cursor: pointer;
+	color: inherit;
+	text-decoration: none;
+	width: 140px;
 }
-
 
 .silentItem {
 	font-size: 90%;
@@ -85,14 +91,6 @@ body {
 	justify-content: center;
 	align-items: center;
 }
-
-.linkItem {
-	cursor: pointer;
-	color: inherit;
-	text-decoration: none;
-	width: 140px;
-}
-
 .iconCredits {
 	display: flex;
 	justify-content: center;

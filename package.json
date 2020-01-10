@@ -4,7 +4,8 @@
   "description": "meal prep planner",
   "main": "js/main.js",
   "scripts": {
-    "start:dev": "webpack-dev-server  --config webpack.config.js"
+    "start:dev": "webpack-dev-server  --config webpack.config.js",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",

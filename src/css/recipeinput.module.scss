@@ -17,7 +17,7 @@
 	margin-bottom: 5px;
 }
 
-.inputfield {
+.inputField {
 	width: 190px;
 	padding: .5em;
 	margin-right: 1.5em;
@@ -31,30 +31,5 @@
 	color: white;
 	font-size: 14px;
 	cursor: pointer;
-}
-
-.list {
-	list-style: none;
-	padding: 0;
-	overflow: auto;
-	height: 260px;
-	width: 280px;
-}
-
-.listItem {
-	background-color: white;
-	color: black;
-	padding: 0.4em .8em;
-	width: 250px;
-	overflow: hidden;
-	border: 1px solid $color-grey-light;
-	margin-bottom: 2px;
-	display: flex;
-	justify-content: space-between;
-}
-
-.deleteBtn {
-	cursor: pointer;
-	color: $color-grey-light;
 }
 

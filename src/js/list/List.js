@@ -1,13 +1,13 @@
 import React, {useContext} from 'react';
-import {MealsContext} from "./MealsContext";
-import css from '../css/recipeinput.module.scss';
-import ListItem from './Listitem';
+import {MealsContext} from "../MealsContext";
+import css from './list.module.scss';
+import ListItem from './ListItem';
 
 
 const List = props => {
 	const [data, setData] = useContext(MealsContext);
 	const deleteItem = (item) => {
-		const _meals = data.meals.filter(_meals => _meals !== item)
+		const _meals = data.meals.filter(_meals => _meals !== item);
 		setData({
 			meals: _meals,
 			lunchGen: data.lunchGen,

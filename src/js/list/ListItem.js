@@ -1,5 +1,5 @@
 import React from 'react';
-import css from '../css/recipeinput.module.scss';
+import css from './list.module.scss';
 
 
 const ListItem = props => {
