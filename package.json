@@ -5,7 +5,9 @@
   "main": "js/main.js",
   "scripts": {
     "start:dev": "webpack-dev-server  --config webpack.config.js",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist",
+    "build:prod": "webpack --env.mode=production --display-error-details",
+    "build:dev": "webpack --env.mode=development --display-error-details --progress"
   },
   "repository": {
     "type": "git",
@@ -37,6 +39,7 @@
     "@babel/preset-es2015": "^7.0.0-beta.53",
     "@babel/preset-react": "^7.7.4",
     "file-loader": "^5.0.2",
+    "gh-pages": "^2.2.0",
     "node-sass": "^4.13.0",
     "postcss-loader": "^3.0.0",
     "sass-loader": "^8.0.0",
